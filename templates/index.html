@@ -1,0 +1,34 @@
+{% extends 'layout.html' %} {% block main %}
+<div>
+    <p>{{dialogue}}</p>
+    <hr />
+    <form action="/" method="post">
+        <div class="mb-3">
+            <input
+                type="submit"
+                name="action"
+                value="No"
+                class="btn btn-danger me-5"
+            />
+            <input
+                type="submit"
+                name="action"
+                value="Yes"
+                class="btn btn-success ms-5"
+            />
+        </div>
+    </form>
+    <p>
+        <span
+            ><img
+                class="me-3"
+                src="\static\coin_dollar_finance_icon_125510.ico"
+                alt="Bootstrap"
+                width="30"
+                height="24"
+            />{{money}}</span
+        >
+    </p>
+    <p>Weapon: {{weapon}}</p>
+</div>
+{% endblock main %}

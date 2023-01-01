@@ -154,6 +154,7 @@ def index():
                     return redirect("/ending")
         # move one step each choice
         session["steps"] += 1
+        # forget post request
         return redirect("/")
 
     # the start of the game
